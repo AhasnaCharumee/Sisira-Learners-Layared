@@ -1,0 +1,31 @@
+.button {
+    -fx-background-color: #3674B5; /* Yellow for primary buttons */
+    -fx-text-fill: #ffffff; /* Black text for contrast */
+    -fx-font-size: 14px; /* Readable font size */
+    -fx-font-weight: bold; /* Bold for emphasis */
+    /*-fx-padding: 10px 20px; !* Comfortable padding *!*/
+    -fx-background-radius: 10px; /* Rounded corners */
+    -fx-border-color: #0000; /* Black border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+}
+
+.pane {
+    background-color: #052459; /* Light Blue-Gray */
+
+}
+
+
+
+
+/*--primary-100:#d4eaf7;*/
+/*--primary-200:#b6ccd8;*/
+/*--primary-300:#3b3c3d;*/
+/*--accent-100:#71c4ef;*/
+/*--accent-200:#00668c;*/
+/*--text-100:#1d1c1c;*/
+/*--text-200:#313d44;*/
+/*--bg-100:#fffefb;*/
+/*--bg-200:#f5f4f1;*/
+/*--bg-300:#cccbc8;*/
+

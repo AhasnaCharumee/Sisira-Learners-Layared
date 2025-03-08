@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardpane" prefHeight="720.0" prefWidth="1280.0" styleClass="pane" stylesheets="@../CSS/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse72.sisiralearners.controller.DashBoardFormController">
+   <children>
+      <BorderPane prefHeight="720.0" prefWidth="1280.0">
+         <left>
+            <AnchorPane fx:id="navpanel" prefHeight="589.0" prefWidth="73.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="5.0" layoutY="45.0" prefHeight="470.0" prefWidth="63.0" spacing="12.0" style="-fx-background-color: #d4eaf7; -fx-border-radius: 30; -fx-background-radius: 30;">
+                     <children>
+                        <ImageView fx:id="btndashboard" fitHeight="45.0" fitWidth="45.0" onMouseClicked="#btndashboardOnAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/icons8-view-all-96.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btnStudent" fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#btnStudentOnAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/icons8-add-male-user-group-90.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="btnCourses" fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="66.0" onMouseClicked="#btnCoursesOnAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/icons8-add-properties-90.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btnBooking" fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="122.0" onMouseClicked="#btnBookingOnAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/icons8-booking-90.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btnPayment" fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="178.0" onMouseClicked="#btnPaymentOnAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/icons8-payment-90.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btnExam" fitHeight="45.0" fitWidth="45.0" layoutX="15.0" layoutY="243.0" onMouseClicked="#btnExamOnAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/icons8-exam-90.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btnSession" fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="234.0" onMouseClicked="#btnSessionOnAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/icons8-timetable-60.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btnInstructor" fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="290.0" onMouseClicked="#btnInstructorOnAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/icons8-teacher-90.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="btnVehicle" fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="346.0" onMouseClicked="#btnVehicleOnAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icons/icons8-traffic-jam-90.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <bottom>
+            <AnchorPane prefHeight="43.0" prefWidth="1280.0" style="-fx-background-color: #3b3c3d;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="btnLogOt" fitHeight="32.0" fitWidth="36.0" layoutX="14.0" layoutY="6.0" onMouseClicked="#btnLogOtOnAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons/icons8-logout-100 (1).png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="523.0" layoutY="13.0" text="© 2024 Sisiralearners™. All Rights Reserved." textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </bottom>
+         <top>
+            <AnchorPane prefHeight="56.0" prefWidth="1246.0" style="-fx-background-color: #313d44;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="btnUsersettigs" fitHeight="44.0" fitWidth="34.0" layoutX="1213.0" layoutY="9.0" onMouseClicked="#btnUsersettigsOnAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons/icons8-user-settings-96.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblDate" layoutX="932.0" layoutY="15.0" prefHeight="25.0" prefWidth="105.0" text="02-02-2025" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTime" layoutX="1081.0" layoutY="15.0" prefHeight="25.0" prefWidth="104.0" text="10 : 40 PM" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-3.0" endY="14.0" layoutX="1067.0" layoutY="25.0" startX="-3.0" startY="-10.0" stroke="WHITE" strokeWidth="3.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane fx:id="homepage" prefHeight="626.0" prefWidth="1166.0" style="-fx-background-color: #fffefb;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="540.0" fitWidth="1017.0" layoutX="83.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/727091cf_69db_4e6f_8f69_ee77b851091a0.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
